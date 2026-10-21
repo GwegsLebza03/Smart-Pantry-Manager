@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Smart Pantry Manager is intentionally offline.
+        No INTERNET, GPS, Maps or location permissions are required.
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:label="Smart Pantry Manager"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".RecipeDetailActivity" />
+        <activity android:name=".SuggestedRecipesActivity" />
+        <activity android:name=".AddEditIngredientActivity" />
+
+        <!-- MainActivity is the pantry list and the launcher screen. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
